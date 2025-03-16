@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1A1A1A; /* Dark background */
+    color: #E0E0E0; /* Light text color */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #6E56CF, #4A3C99); /* Monad Purple gradient */
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    font-weight: bold; /* Ubuntu Bold */
+    margin: 0;
+}
+
+header p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: medium; /* Inter Medium */
+    margin: 10px 0 0;
+}
+
+/* Navigation */
+nav {
+    background: #333333; /* Dark Grey */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-family: 'Inter', sans-serif;
+    font-weight: medium; /* Inter Medium */
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6E56CF; /* Monad Purple */
+}
+
+/* Sections */
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    font-weight: bold; /* Ubuntu Bold */
+    color: #6E56CF; /* Monad Purple */
+    margin-bottom: 20px;
+}
+
+/* Dictionary Grid */
+.dictionary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #2D2D2D; /* Dark Grey */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    font-weight: medium; /* Ubuntu Medium */
+    margin: 0 0 10px;
+    color: #6E56CF; /* Monad Purple */
+}
+
+.card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: regular; /* Inter Regular */
+    margin: 0;
+    color: #E0E0E0; /* Light text color */
+}
+
+/* Translator */
+.translator-box {
+    background: #2D2D2D; /* Dark Grey */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #444444; /* Darker Grey */
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: regular; /* Inter Regular */
+    background-color: #1A1A1A; /* Dark background */
+    color: #E0E0E0; /* Light text color */
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background: #6E56CF; /* Monad Purple */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: medium; /* Inter Medium */
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #4A3C99; /* Darker Monad Purple */
+}
+
+/* Footer */
+footer {
+    background: #333333; /* Dark Grey */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: regular; /* Inter Regular */
+    margin: 0;
+}
